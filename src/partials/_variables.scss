@@ -1,7 +1,21 @@
-//COLORI
-$bgcHeader: coral;
+//WARNING COLORI
 
-//ALTEZZE
+//header
+$bgcHeader: black;
+$cHeader: #eeeeee;
+
+// WARNING LARGHEZZE
+
+$widthDesktop: 1200px;
 
 
-//PADDING E MARGINI
+//WARNING ALTEZZE
+
+//header
+$hHeader: 100px;
+$hHeaderTop: 45px;
+$hHeaderBottom: calc(#{$hHeader} - #{$hHeaderTop});
+
+//WARNING PADDING E MARGINI
+
+//header

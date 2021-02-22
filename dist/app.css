@@ -3,3 +3,22 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+header {
+  height: 100px;
+  background-color: black;
+  color: #eeeeee;
+}
+header .container {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: green;
+}
+header .header_top {
+  height: 45px;
+  background-color: blue;
+}
+header .header_bottom {
+  height: calc(100px - 45px);
+  background-color: green;
+}

@@ -1,0 +1,14 @@
+//in questo modo, devo aggiungere solo include container dentro chi voglio
+@mixin container {
+  .container {
+  width: $widthDesktop;
+  margin: 0 auto;
+  background-color: green;
+  }
+}
+//in quest'altro modo nell'altro foglio dovrò inserire la classe .container e al suo interno fare l'includes
+// @mixin container {
+//   width: $widthDesktop;
+//   margin: 0 auto;
+//   background-color: green;
+// }

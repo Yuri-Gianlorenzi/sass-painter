@@ -1,0 +1,16 @@
+header {
+  height: $hHeader;
+  background-color: $bgcHeader;
+  color: $cHeader;
+  @include container;
+  //ESEMPIO per richiamare il nome del padre, se fosse stato un id avrei dovuto usare il doppio ##
+  .#{&}_top {
+    height: $hHeaderTop;
+    background-color: blue;
+  }
+
+  .#{&}_bottom {
+    height: $hHeaderBottom;
+    background-color: green;
+  }
+}
