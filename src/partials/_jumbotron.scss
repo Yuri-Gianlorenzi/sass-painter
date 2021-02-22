@@ -1,0 +1,63 @@
+header {
+  .jumbotron {
+    color: black;
+    height: $hHeaderJumbo;
+    background-image: url("../img/bg-painter-home.jpg");
+    @include bgPosition;
+    @include container;
+
+    .jumbo_box {
+      height: 100%;
+      max-width: 50%;
+
+      @include flex(center, flex-start);
+      flex-direction: column;
+
+      & > div {
+        margin: 20px 0px;
+      }//div in generale
+
+      .title {
+        @include flex(flex-start);
+        position: relative;
+
+
+        h1 {
+          font-size: 70px;
+          font-weight: 400;
+        }//h1
+
+        .date {
+          position: absolute;
+          bottom: 10px;
+          right: -70px;
+          p {
+            font-size: 30px;
+          }//p
+
+          span {
+            font-size: 15px;
+          }
+
+        }//date
+      }//title
+
+      div:nth-child(2) {
+        p {
+          font-size: 20px;
+        }
+      }//fine p sotto h1
+
+      .offer {
+        font-style: italic;
+        color: $cOffer;
+
+        h2 {
+          font-size: 20px;
+        }
+      }
+    }//jumbo_box
+
+  }//jumbotron
+
+}

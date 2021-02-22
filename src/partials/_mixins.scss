@@ -3,6 +3,7 @@
   .container {
   width: $widthDesktop;
   margin: 0 auto;
+  height: 100%;
   }
 }
 //in quest'altro modo nell'altro foglio dovrò inserire la classe .container e al suo interno fare l'includes
@@ -23,4 +24,9 @@
 
 @mixin pointer {
   cursor: pointer;
+}
+
+@mixin bgPosition {
+  background-size: cover;
+  background-repeat: no-repeat;
 }
