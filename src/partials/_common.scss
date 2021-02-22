@@ -2,4 +2,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+//per ogni lista della pagina , agli li togliamo i pallini
+ul li {
+  list-style: none;
+}
+
+//per togliere la sottolineatura ad ogni a della pagina
+a {
+  text-decoration: none;
 }

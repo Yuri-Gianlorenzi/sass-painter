@@ -2,6 +2,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 header {
@@ -12,13 +21,84 @@ header {
 header .container {
   width: 1200px;
   margin: 0 auto;
-  background-color: green;
 }
 header .header_top {
   height: 45px;
-  background-color: blue;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+header .header_top nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+header .header_top nav ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: 10px;
+}
+header .header_top nav ul li {
+  padding-right: 15px;
+}
+header .header_top nav ul li a {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: #8f8f93;
+  font-size: 12px;
+}
+header .header_top nav ul li a:hover {
+  color: white;
+}
+header .header_top nav ul li a i {
+  color: #009cff;
+  margin-right: 5px;
+  font-size: 15px;
+}
+header .header_top nav select {
+  margin-right: 10px;
 }
 header .header_bottom {
   height: calc(100px - 45px);
-  background-color: green;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+header .header_bottom .box_logo {
+  cursor: pointer;
+}
+header .header_bottom .box_logo img {
+  height: 25px;
+  padding-right: 20px;
+}
+header .header_bottom nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: calc(100px - 45px);
+}
+header .header_bottom nav ul li {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+  padding: 0px 20px;
+  height: 100%;
+}
+header .header_bottom nav ul li a {
+  color: white;
+}
+header .header_bottom nav ul li:hover {
+  background-color: #eeeeee;
+}
+header .header_bottom nav ul li:hover a {
+  color: black;
+}
+header .header_bottom nav ul li i {
+  font-size: 10px;
+  padding-left: 5px;
+  padding-top: 5px;
+  color: #8f8f93;
 }

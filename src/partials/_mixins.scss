@@ -3,7 +3,6 @@
   .container {
   width: $widthDesktop;
   margin: 0 auto;
-  background-color: green;
   }
 }
 //in quest'altro modo nell'altro foglio dovrò inserire la classe .container e al suo interno fare l'includes
@@ -12,3 +11,16 @@
 //   margin: 0 auto;
 //   background-color: green;
 // }
+
+//altro modo di creare i mixin, con dei parametri segnaposto che possono assumere dei valori di default, in questo caso se non lo specifico, align di default sarà center
+@mixin flex($justify, $align:center) {
+    display: flex;
+    //in justify content e align items gli assegno variabili segnaposto, in maniera tale che prendano il valore che gli passo
+    justify-content: $justify;
+    align-items: $align;
+}
+
+
+@mixin pointer {
+  cursor: pointer;
+}

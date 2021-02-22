@@ -3,6 +3,8 @@
 //header
 $bgcHeader: black;
 $cHeader: #eeeeee;
+$iconHeader: #009cff;
+$infoHeader: #8f8f93;
 
 // WARNING LARGHEZZE
 
@@ -15,7 +17,12 @@ $widthDesktop: 1200px;
 $hHeader: 100px;
 $hHeaderTop: 45px;
 $hHeaderBottom: calc(#{$hHeader} - #{$hHeaderTop});
+$hLogo: 25px;
 
 //WARNING PADDING E MARGINI
+
+//header
+$paddRightLiNavTop: 15px;
+$marginRnavTop: 10px;
 
 //header

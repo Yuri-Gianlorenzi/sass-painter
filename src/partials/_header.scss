@@ -2,15 +2,94 @@ header {
   height: $hHeader;
   background-color: $bgcHeader;
   color: $cHeader;
+  //per includere la classe container
   @include container;
+
+
   //ESEMPIO per richiamare il nome del padre, se fosse stato un id avrei dovuto usare il doppio ##
   .#{&}_top {
     height: $hHeaderTop;
-    background-color: blue;
+    @include flex(flex-end);
+
+    nav {
+      @include flex(flex-end, center);
+
+      ul {
+        @include flex(flex-start, center);
+        margin-right: $marginRnavTop;
+
+
+        li {
+          padding-right: $paddRightLiNavTop;
+
+          a {
+            @include flex(flex-end);
+            color: $infoHeader;
+            font-size: 12px;
+
+            &:hover {
+              color: white;
+            }//a:hover
+
+            i {
+              color:  $iconHeader;
+              margin-right: 5px;
+              font-size: 15px;
+            }//i
+          }//a
+        }//li
+
+      }//ul
+
+      select {
+        margin-right: $marginRnavTop;
+      }//select
+
+    }//fine nav header_top
   }
 
   .#{&}_bottom {
     height: $hHeaderBottom;
-    background-color: green;
-  }
+    @include flex(flex-start);
+
+    .box_logo {
+      @include pointer;
+
+      img {
+        height: $hLogo;
+        padding-right: 20px;
+      }//img
+    }//box_logo
+
+    nav ul {
+      @include flex(space-around);
+      height: $hHeaderBottom;
+
+      li {
+        @include flex(space-around);
+        @include pointer;
+        padding: 0px 20px;
+        height: 100%;
+
+        a{
+          color: white;
+        }
+
+        &:hover {
+          background-color: #eeeeee;
+        }
+
+        &:hover a {
+          color: black;
+        }
+
+        i {
+          font-size: 10px;
+          padding-left: 5px;
+          padding-top: 5px;
+          color: $infoHeader;
+        }//i
+      }//li
+    }//nav ul
+  }//header_bottom
 }
