@@ -9,7 +9,11 @@ $cOffer: #c70cb9;
 
 
 
-
+//footer
+$bgcFooterTop: #ececec;
+$bgcFooterBottom: #1e1e1e;
+$cFooterTop: #4d4d4d;
+$cFooterBottom: white;
 
 
 
@@ -17,18 +21,6 @@ $cOffer: #c70cb9;
 // WARNING LARGHEZZE
 
 $widthDesktop: 1200px;
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -42,7 +34,10 @@ $hHeaderJumbo: 500px;
 $hLogo: 25px;
 
 
+//footer
 
+$hFooterTop: 300px;
+$hFooterBottom: 100px;
 
 
 
@@ -56,4 +51,6 @@ $hLogo: 25px;
 $paddRightLiNavTop: 15px;
 $marginRnavTop: 10px;
 
-//header
+//footer
+
+$paddLiFooterBottom: 0px 20px;
