@@ -6,6 +6,47 @@ footer {
     background-color: $bgcFooterTop;
     color: $cFooterTop;
     height: $hFooterTop;
+
+    .container {
+      @include flex(flex-start, flex-start);
+      padding: 20px;
+
+      & > div.footer_list:not(:first-child) {
+        margin-left: 150px;
+      }
+    }//container
+
+    .footer_list {
+
+      h3 {
+        font-weight: 400;
+        margin-bottom: 20px;
+      }//h3
+
+      ul li {
+        @include pointer;
+        margin-bottom: 10px;
+        font-weight: 300;
+        font-size: 14px;
+
+        &:hover {
+          color: black;
+          text-decoration: underline;
+        }//li:hover
+      }//li
+
+      ul.social_list {
+        @include flex(space-between);
+        padding-top: 10px;
+
+        li {
+          padding: 0px 10px;
+          i {
+            font-size: 20px;
+          }//i
+        }//li
+      }//social list
+    }//footer_list
   }//footer_top
 
   .#{&}_bottom {
