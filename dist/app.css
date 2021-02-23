@@ -13,61 +13,6 @@ a {
   text-decoration: none;
 }
 
-header .jumbotron {
-  color: black;
-  height: 500px;
-  background-image: url("../img/bg-painter-home.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-header .jumbotron .container {
-  width: 1200px;
-  margin: 0 auto;
-  height: 100%;
-}
-header .jumbotron .jumbo_box {
-  height: 100%;
-  max-width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-direction: column;
-}
-header .jumbotron .jumbo_box > div {
-  margin: 20px 0px;
-}
-header .jumbotron .jumbo_box .title {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  position: relative;
-}
-header .jumbotron .jumbo_box .title h1 {
-  font-size: 70px;
-  font-weight: 400;
-}
-header .jumbotron .jumbo_box .title .date {
-  position: absolute;
-  bottom: 10px;
-  right: -70px;
-}
-header .jumbotron .jumbo_box .title .date p {
-  font-size: 30px;
-}
-header .jumbotron .jumbo_box .title .date span {
-  font-size: 15px;
-}
-header .jumbotron .jumbo_box div:nth-child(2) p {
-  font-size: 20px;
-}
-header .jumbotron .jumbo_box .offer {
-  font-style: italic;
-  color: #c70cb9;
-}
-header .jumbotron .jumbo_box .offer h2 {
-  font-size: 20px;
-}
-
 header {
   background-color: black;
   color: #eeeeee;
@@ -128,13 +73,13 @@ header .header_bottom .box_logo img {
   height: 25px;
   padding-right: 20px;
 }
-header .header_bottom nav ul {
+header .header_bottom nav > ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 55px;
 }
-header .header_bottom nav ul li {
+header .header_bottom nav > ul li {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -142,20 +87,108 @@ header .header_bottom nav ul li {
   padding: 0px 20px;
   height: 100%;
 }
-header .header_bottom nav ul li a {
+header .header_bottom nav > ul li a {
   color: white;
 }
-header .header_bottom nav ul li:hover {
+header .header_bottom nav > ul li:hover {
   background-color: #eeeeee;
 }
-header .header_bottom nav ul li:hover a {
+header .header_bottom nav > ul li:hover a {
   color: black;
 }
-header .header_bottom nav ul li i {
+header .header_bottom nav > ul li i {
   font-size: 10px;
   padding-left: 5px;
   padding-top: 5px;
   color: #8f8f93;
+}
+
+li.parent_dropdown {
+  position: relative;
+}
+li.parent_dropdown .dropdown {
+  position: absolute;
+  width: 220px;
+  top: 55px;
+  left: 0;
+  background-color: #eeeeee;
+  display: none;
+  z-index: 2;
+}
+li.parent_dropdown .dropdown ul.drop_list {
+  display: flex;
+  flex-direction: column;
+}
+li.parent_dropdown .dropdown ul.drop_list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-size: 12px;
+}
+li.parent_dropdown .dropdown ul.drop_list li:hover {
+  background-color: #cbcbcb;
+}
+li.parent_dropdown .dropdown ul.drop_list li:hover i {
+  color: black;
+}
+li.parent_dropdown:hover .dropdown {
+  display: block;
+}
+
+header .jumbotron {
+  color: black;
+  height: 500px;
+  background-image: url("../img/bg-painter-home.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+header .jumbotron .container {
+  width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+}
+header .jumbotron .jumbo_box {
+  height: 100%;
+  max-width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+header .jumbotron .jumbo_box > div {
+  margin: 20px 0px;
+}
+header .jumbotron .jumbo_box .title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+header .jumbotron .jumbo_box .title h1 {
+  font-size: 70px;
+  font-weight: 400;
+}
+header .jumbotron .jumbo_box .title .date {
+  position: absolute;
+  bottom: 10px;
+  right: -70px;
+}
+header .jumbotron .jumbo_box .title .date p {
+  font-size: 30px;
+}
+header .jumbotron .jumbo_box .title .date span {
+  font-size: 15px;
+}
+header .jumbotron .jumbo_box div:nth-child(2) p {
+  font-size: 20px;
+}
+header .jumbotron .jumbo_box .offer {
+  font-style: italic;
+  color: #c70cb9;
+}
+header .jumbotron .jumbo_box .offer h2 {
+  font-size: 20px;
 }
 
 #main {

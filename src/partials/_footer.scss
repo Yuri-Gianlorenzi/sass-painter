@@ -95,15 +95,15 @@ footer {
             &:hover {
               color: white;
               text-decoration: underline;
-            }
-          }
-        }
-      }
+            }//a:hover
+          }//a
+        }//li
+      }//ul
 
       p {
         font-size: 12px;
         padding: $paddLiFooterBottom;
-      }
-    }
+      }//p
+    }//policy
   }//footer_bvottom
 }

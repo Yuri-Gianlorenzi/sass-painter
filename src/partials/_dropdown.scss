@@ -1,0 +1,36 @@
+li.parent_dropdown {
+  position: relative;
+
+  .dropdown {
+    position: absolute;
+    width: 220px;
+    top: $hHeaderBottom;
+    left: 0;
+    background-color: #eeeeee;
+    display: none;
+    z-index: 2;
+
+    ul.drop_list {
+      display: flex;
+      flex-direction: column;
+
+      li {
+        @include flex(space-between);
+        padding: 10px;
+        font-size: 12px;
+
+        &:hover {
+          background-color: #cbcbcb;
+
+          i {
+            color: black;
+          }
+        }
+      }//li
+    }//ul
+  }//dropdown
+
+  &:hover .dropdown {
+    display: block;
+  }
+}//parent_dropdown

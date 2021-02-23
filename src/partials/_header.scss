@@ -61,7 +61,7 @@ header {
       }//img
     }//box_logo
 
-    nav ul {
+    nav > ul {
       @include flex(space-around);
       height: $hHeaderBottom;
 
