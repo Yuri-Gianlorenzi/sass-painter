@@ -13,6 +13,41 @@ a {
   text-decoration: none;
 }
 
+.jumbo_buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.jumbo_buttons .btn_black {
+  cursor: pointer;
+  border: 0;
+  display: inline-block;
+  background-color: black;
+  font-size: 20px;
+  padding: 10px 25px;
+  color: #eeeeee;
+  text-transform: uppercase;
+  border: 2px solid black;
+}
+.jumbo_buttons .btn_black:hover {
+  background-color: #282828;
+}
+.jumbo_buttons .btn_ghost {
+  cursor: pointer;
+  border: 0;
+  display: inline-block;
+  background-color: rgba(147, 147, 147, 0);
+  font-size: 20px;
+  padding: 10px 25px;
+  color: black;
+  text-transform: uppercase;
+  border: 2px solid black;
+  margin-left: 30px;
+}
+.jumbo_buttons .btn_ghost:hover {
+  color: #362c22;
+}
+
 header {
   background-color: black;
   color: #eeeeee;
@@ -192,8 +227,7 @@ header .jumbotron .jumbo_box .offer h2 {
 }
 
 #main {
-  height: 700px;
-  background-color: coral;
+  background-color: #e8e8e8;
 }
 
 footer .footer_top {

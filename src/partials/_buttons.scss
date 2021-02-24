@@ -1,0 +1,25 @@
+.jumbo_buttons {
+  @include flex(space-between);
+
+  .btn_black {
+    @include pointer;
+    @include btn (black, 10px 25px, 20px, #eeeeee);
+    border: 2px solid black;
+
+
+    &:hover {
+      background-color: rgb(40, 40, 40);
+    }//btn_black:hover
+  }//btn_black
+
+  .btn_ghost {
+    @include pointer;
+    @include btn (rgba(147, 147, 147, 0), 10px 25px, 20px, black);
+    border: 2px solid black;
+    margin-left: 30px;
+
+    &:hover {
+      color: rgb(54, 44, 34);
+    }
+  }//btn_ghost
+}
