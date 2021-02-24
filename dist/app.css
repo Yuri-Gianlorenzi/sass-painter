@@ -48,6 +48,20 @@ a {
   color: #362c22;
 }
 
+.box_main .btn_white {
+  cursor: pointer;
+  border: 0;
+  display: inline-block;
+  background-color: #ffffff;
+  font-size: 14px;
+  padding: 10px 20px;
+  color: rgba(255, 255, 255, 0);
+  text-transform: uppercase;
+}
+.box_main .btn_white:hover {
+  background-color: #dddddd;
+}
+
 header {
   background-color: black;
   color: #eeeeee;
@@ -288,6 +302,69 @@ header .jumbotron .jumbo_box .offer h2 {
 }
 #main .main_top .packs .pack .info_pack .more:hover {
   text-decoration: underline;
+}
+#main .main_bottom .container {
+  width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+}
+#main .main_bottom .container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#main .main_bottom .container .box_main {
+  flex-basis: 50%;
+  height: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  color: #ffffff;
+}
+#main .main_bottom .container .box_main:first-child, #main .main_bottom .container .box_main:nth-child(4), #main .main_bottom .container .box_main:nth-child(5) {
+  padding: 40px;
+}
+#main .main_bottom .container .box_main:first-child h2, #main .main_bottom .container .box_main:nth-child(4) h2, #main .main_bottom .container .box_main:nth-child(5) h2 {
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+#main .main_bottom .container .box_main:first-child p, #main .main_bottom .container .box_main:nth-child(4) p, #main .main_bottom .container .box_main:nth-child(5) p {
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+#main .main_bottom .container .box_main:first-child {
+  background-color: #3c1567;
+}
+#main .main_bottom .container .box_main:first-child div.btn_white {
+  color: #3c1567;
+}
+#main .main_bottom .container .box_main:nth-child(4) {
+  background-color: #3c3c3c;
+}
+#main .main_bottom .container .box_main:nth-child(4) div.btn_white {
+  color: #3c3c3c;
+}
+#main .main_bottom .container .box_main:nth-child(5) {
+  background-color: #0072bc;
+}
+#main .main_bottom .container .box_main:nth-child(5) div.btn_white {
+  color: #0072bc;
+}
+#main .main_bottom .container .box_main:nth-child(2) {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/wacom-painter.jpg");
+}
+#main .main_bottom .container .box_main:nth-child(2) img {
+  width: 80%;
+}
+#main .main_bottom .container .box_main:nth-child(3) img, #main .main_bottom .container .box_main:nth-child(6) img {
+  width: 100%;
+  height: 100%;
 }
 
 footer .footer_top {
