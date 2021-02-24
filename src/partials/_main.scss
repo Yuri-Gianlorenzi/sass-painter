@@ -1,3 +1,66 @@
 #main {
   background-color: $bgcMain;
+  @include flex (space-between);
+  flex-direction: column;
+
+  .main_top {
+    @include container;
+    color: $cMainTop;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    .container {
+      @include flex (space-around);
+      flex-direction: column;
+    }//container
+
+    h2 {
+      font-size: 35px;
+      font-weight: 400;
+    }
+
+    .packs {
+      padding-top: 30px;
+      width: 100%;
+      @include flex (space-between);
+
+      .pack {
+        background-color: #ffffff;
+        width: 380px;
+
+        .img_pack {
+
+          img {
+            width: 380px;
+          }//img
+        }//img_pack
+
+        .info_pack {
+          padding: 20px;
+           h3 {
+             font-weight: 600;
+             padding-bottom: 20px;
+
+             span.new {
+               color: #009cff;
+               font-style: oblique;
+               text-transform: uppercase;
+             }//new
+           }//h3
+
+           p {
+             padding-bottom: 20px;
+           }//p
+
+           .more {
+              @include pointer;
+              color: #009cff;
+              &:hover {
+                text-decoration: underline;
+              }
+            }//more
+        }//info_pack
+      }//pack
+    }//packs
+
+  }//main_top
 }

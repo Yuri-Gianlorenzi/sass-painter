@@ -228,6 +228,66 @@ header .jumbotron .jumbo_box .offer h2 {
 
 #main {
   background-color: #e8e8e8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+#main .main_top {
+  color: #333333;
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+#main .main_top .container {
+  width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+}
+#main .main_top .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+#main .main_top h2 {
+  font-size: 35px;
+  font-weight: 400;
+}
+#main .main_top .packs {
+  padding-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#main .main_top .packs .pack {
+  background-color: #ffffff;
+  width: 380px;
+}
+#main .main_top .packs .pack .img_pack img {
+  width: 380px;
+}
+#main .main_top .packs .pack .info_pack {
+  padding: 20px;
+}
+#main .main_top .packs .pack .info_pack h3 {
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+#main .main_top .packs .pack .info_pack h3 span.new {
+  color: #009cff;
+  font-style: oblique;
+  text-transform: uppercase;
+}
+#main .main_top .packs .pack .info_pack p {
+  padding-bottom: 20px;
+}
+#main .main_top .packs .pack .info_pack .more {
+  cursor: pointer;
+  color: #009cff;
+}
+#main .main_top .packs .pack .info_pack .more:hover {
+  text-decoration: underline;
 }
 
 footer .footer_top {
